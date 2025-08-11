@@ -1,0 +1,94 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    color: #1d0202;
+}
+.parallax{
+    position: relative;
+    background-image: url('../img/festa.png');
+    height: 100%;
+    opacity: 0.75;
+    background-attachment: fixed; /* fixa a imagem de fundo */
+    background-position: center; /* centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* não repete a imagem de fundo */
+    background-size: cover; /* cobre todo o fundo */
+}
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+.caption span.border{
+    background-color:red;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.box{
+    background-color: #ffe066;
+    text-align: justify;
+    padding: 50px 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: piscar 0.7s infinite;
+}
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px #ffb300aa;
+}
+@keyframes piscar {
+    0%, 100% { opacity: 1;
+    background-color: #ffe066; }
+    50% { opacity: 0.3;
+    background-color: #ff6f61; }
+}
+.parallax2{
+    position: relative;
+    background-image: url('../img/comidas-festa-junina.jpg');
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed; /* fixa a imagem de fundo */
+    background-position: center; /* centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* não repete a imagem de fundo */
+    background-size: cover; /* cobre todo o fundo */
+}
+.parallax3{
+    position: relative;
+    background-image: url('../img/titulojadefesta.webp');
+    height: 100%;
+    opacity: 0.85;
+    background-attachment: fixed; /* fixa a imagem de fundo */
+    background-position: center; /* centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* não repete a imagem de fundo */
+    background-size: cover; /* cobre todo o fundo */
+}
+/* ...existing code... */
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 30px auto 40px auto;
+    display: block;
+    box-shadow: 0 4px 16px #ffb30055;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: #ffe066;
+    color: #ff6f61;
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 32px #ffb300aa;
+    border: 2px solid #ff6f61;
+}
+.musica{
+    background-color: #ffe066;
+}
